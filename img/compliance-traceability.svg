@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <title>Compliance and Full Traceability</title>
+  <desc>Complete history of part installations, removals, and configuration changes at every level in Maximo ACM</desc>
+  
+  <defs>
+    <style>
+      .timeline-line {
+        stroke: #393939;
+        stroke-width: 3;
+        fill: none;
+      }
+      .history-connector {
+        stroke: #8d8d8d;
+        stroke-width: 1.5;
+        stroke-dasharray: 3,3;
+        fill: none;
+        opacity: 0.5;
+      }
+      .node-shadow {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.15));
+      }
+    </style>
+    
+    <!-- Gradients matching other SVGs -->
+    <linearGradient id="installGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#24a148;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#198038;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="removeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a3ffc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6929c4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="changeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#009d9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007d79;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="recordGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f62fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0353e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8d8d8d;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#393939;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8d8d8d;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Central Timeline -->
+  <line x1="50" y1="150" x2="350" y2="150" class="timeline-line" stroke="url(#timelineGrad)"/>
+  
+  <!-- Timeline markers -->
+  <circle cx="80" cy="150" r="4" fill="#393939"/>
+  <circle cx="140" cy="150" r="4" fill="#393939"/>
+  <circle cx="200" cy="150" r="4" fill="#393939"/>
+  <circle cx="260" cy="150" r="4" fill="#393939"/>
+  <circle cx="320" cy="150" r="4" fill="#393939"/>
+  
+  <!-- History connectors from timeline to events -->
+  <line x1="80" y1="150" x2="80" y2="80" class="history-connector"/>
+  <line x1="140" y1="150" x2="140" y2="220" class="history-connector"/>
+  <line x1="200" y1="150" x2="200" y2="80" class="history-connector"/>
+  <line x1="260" y1="150" x2="260" y2="220" class="history-connector"/>
+  <line x1="320" y1="150" x2="320" y2="80" class="history-connector"/>
+  
+  <!-- Event 1: Installation (Green - Top Left) -->
+  <g class="node-shadow">
+    <circle cx="80" cy="60" r="20" fill="url(#installGrad)" stroke="#198038" stroke-width="2.5"/>
+    <path d="M 80 50 L 80 70 M 70 60 L 90 60" stroke="#ffffff" stroke-width="3" 
+          opacity="0.9" stroke-linecap="round"/>
+    <circle cx="80" cy="60" r="12" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- Event 2: Removal (Purple - Bottom) -->
+  <g class="node-shadow">
+    <circle cx="140" cy="240" r="20" fill="url(#removeGrad)" stroke="#6929c4" stroke-width="2.5"/>
+    <path d="M 130 240 L 150 240" stroke="#ffffff" stroke-width="3" 
+          opacity="0.9" stroke-linecap="round"/>
+    <circle cx="140" cy="240" r="12" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- Event 3: Configuration Change (Teal - Top Center) -->
+  <g class="node-shadow">
+    <circle cx="200" cy="60" r="20" fill="url(#changeGrad)" stroke="#007d79" stroke-width="2.5"/>
+    <path d="M 195 55 L 200 65 L 205 55" stroke="#ffffff" stroke-width="2.5" 
+          opacity="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 195 65 L 200 55 L 205 65" stroke="#ffffff" stroke-width="2.5" 
+          opacity="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Event 4: Installation (Green - Bottom) -->
+  <g class="node-shadow">
+    <circle cx="260" cy="240" r="20" fill="url(#installGrad)" stroke="#198038" stroke-width="2.5"/>
+    <path d="M 260 230 L 260 250 M 250 240 L 270 240" stroke="#ffffff" stroke-width="3" 
+          opacity="0.9" stroke-linecap="round"/>
+    <circle cx="260" cy="240" r="12" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- Event 5: Record/Audit (Blue - Top Right) -->
+  <g class="node-shadow">
+    <circle cx="320" cy="60" r="20" fill="url(#recordGrad)" stroke="#0353e9" stroke-width="2.5"/>
+    <rect x="312" y="52" width="16" height="16" rx="2" fill="none" stroke="#ffffff" 
+          stroke-width="2" opacity="0.4"/>
+    <line x1="316" y1="58" x2="324" y2="58" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+    <line x1="316" y1="62" x2="324" y2="62" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Traceability Records (Left side - stacked documents) -->
+  <g class="node-shadow">
+    <rect x="15" y="35" width="35" height="45" rx="3" fill="#e0e0e0" stroke="#8d8d8d" stroke-width="1.5"/>
+    <rect x="18" y="32" width="35" height="45" rx="3" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1.5"/>
+    <rect x="21" y="29" width="35" height="45" rx="3" fill="#ffffff" stroke="#8d8d8d" stroke-width="1.5"/>
+    <line x1="26" y1="38" x2="51" y2="38" stroke="#0f62fe" stroke-width="1.5" opacity="0.6"/>
+    <line x1="26" y1="44" x2="51" y2="44" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+    <line x1="26" y1="50" x2="46" y2="50" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+    <line x1="26" y1="56" x2="51" y2="56" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Traceability Records (Right side - stacked documents) -->
+  <g class="node-shadow">
+    <rect x="350" y="220" width="35" height="45" rx="3" fill="#e0e0e0" stroke="#8d8d8d" stroke-width="1.5"/>
+    <rect x="347" y="223" width="35" height="45" rx="3" fill="#f4f4f4" stroke="#8d8d8d" stroke-width="1.5"/>
+    <rect x="344" y="226" width="35" height="45" rx="3" fill="#ffffff" stroke="#8d8d8d" stroke-width="1.5"/>
+    <line x1="349" y1="235" x2="374" y2="235" stroke="#0f62fe" stroke-width="1.5" opacity="0.6"/>
+    <line x1="349" y1="241" x2="374" y2="241" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+    <line x1="349" y1="247" x2="369" y2="247" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+    <line x1="349" y1="253" x2="374" y2="253" stroke="#0f62fe" stroke-width="1.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Decorative flow particles -->
+  <circle cx="110" cy="150" r="2" fill="#24a148" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="150" r="2" fill="#009d9a" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="230" cy="150" r="2" fill="#8a3ffc" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="290" cy="150" r="2" fill="#0f62fe" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

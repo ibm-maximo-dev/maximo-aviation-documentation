@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <title>Asset Configuration Manager Hierarchy</title>
+  <desc>Stylized hierarchical diagram showing models, sub-models, installable configurations, and components in Maximo ACM</desc>
+  
+  <defs>
+    <style>
+      .connector {
+        stroke: #393939;
+        stroke-width: 2;
+        stroke-linecap: round;
+        fill: none;
+      }
+      .node-shadow {
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+      }
+    </style>
+    
+    <!-- Gradient for depth effect -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f62fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0353e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#009d9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007d79;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a3ffc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6929c4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#24a148;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#198038;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Connecting Lines with subtle curves -->
+  <path d="M 200 75 Q 200 90, 115 110" class="connector"/>
+  <path d="M 200 75 Q 200 90, 285 110" class="connector"/>
+  
+  <path d="M 115 150 Q 115 165, 70 185" class="connector"/>
+  <path d="M 115 150 Q 115 165, 160 185" class="connector"/>
+  
+  <path d="M 285 150 L 285 185" class="connector"/>
+  
+  <path d="M 70 220 L 70 250" class="connector"/>
+  <path d="M 160 220 L 160 250" class="connector"/>
+  <path d="M 285 220 L 285 250" class="connector"/>
+  
+  <!-- Level 1: Model (Large hexagon) -->
+  <g class="node-shadow">
+    <path d="M 180 50 L 220 50 L 235 70 L 220 90 L 180 90 L 165 70 Z" 
+          fill="url(#blueGrad)" stroke="#0353e9" stroke-width="2.5"/>
+    <circle cx="200" cy="70" r="8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="200" cy="70" r="4" fill="#0353e9"/>
+  </g>
+  
+  <!-- Level 2: Sub-Models (Medium hexagons) -->
+  <g class="node-shadow">
+    <path d="M 95 110 L 135 110 L 147 130 L 135 150 L 95 150 L 83 130 Z" 
+          fill="url(#tealGrad)" stroke="#007d79" stroke-width="2"/>
+    <circle cx="115" cy="130" r="6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="115" cy="130" r="3" fill="#007d79"/>
+  </g>
+  
+  <g class="node-shadow">
+    <path d="M 265 110 L 305 110 L 317 130 L 305 150 L 265 150 L 253 130 Z" 
+          fill="url(#tealGrad)" stroke="#007d79" stroke-width="2"/>
+    <circle cx="285" cy="130" r="6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="285" cy="130" r="3" fill="#007d79"/>
+  </g>
+  
+  <!-- Level 3: Configurations (Rounded rectangles) -->
+  <g class="node-shadow">
+    <rect x="45" y="185" width="50" height="35" rx="6" 
+          fill="url(#purpleGrad)" stroke="#6929c4" stroke-width="2"/>
+    <rect x="55" y="195" width="30" height="15" rx="3" 
+          fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <g class="node-shadow">
+    <rect x="135" y="185" width="50" height="35" rx="6" 
+          fill="url(#purpleGrad)" stroke="#6929c4" stroke-width="2"/>
+    <rect x="145" y="195" width="30" height="15" rx="3" 
+          fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <g class="node-shadow">
+    <rect x="260" y="185" width="50" height="35" rx="6" 
+          fill="url(#purpleGrad)" stroke="#6929c4" stroke-width="2"/>
+    <rect x="270" y="195" width="30" height="15" rx="3" 
+          fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <!-- Level 4: Components (Small circles) -->
+  <g class="node-shadow">
+    <circle cx="70" cy="267" r="15" fill="url(#greenGrad)" 
+            stroke="#198038" stroke-width="2"/>
+    <circle cx="70" cy="267" r="6" fill="#ffffff" opacity="0.4"/>
+  </g>
+  
+  <g class="node-shadow">
+    <circle cx="160" cy="267" r="15" fill="url(#greenGrad)" 
+            stroke="#198038" stroke-width="2"/>
+    <circle cx="160" cy="267" r="6" fill="#ffffff" opacity="0.4"/>
+  </g>
+  
+  <g class="node-shadow">
+    <circle cx="285" cy="267" r="15" fill="url(#greenGrad)" 
+            stroke="#198038" stroke-width="2"/>
+    <circle cx="285" cy="267" r="6" fill="#ffffff" opacity="0.4"/>
+  </g>
+</svg>
