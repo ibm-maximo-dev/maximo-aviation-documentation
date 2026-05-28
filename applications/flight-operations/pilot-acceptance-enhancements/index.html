@@ -1,0 +1,1590 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-applications/flight-operations/pilot-acceptance-enhancements" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Pilot Acceptance Workflow - Enhancement Recommendations | IBM Maximo Aviation</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/applications/flight-operations/pilot-acceptance-enhancements /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Pilot Acceptance Workflow - Enhancement Recommendations | IBM Maximo Aviation"/><meta data-rh=true name=description content="Document Version: 1.0"/><meta data-rh=true property=og:description content="Document Version: 1.0"/><link data-rh=true rel=icon href=/maximo-aviation-documentation/img/favicon.svg /><link data-rh=true rel=canonical href=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/applications/flight-operations/pilot-acceptance-enhancements /><link data-rh=true rel=alternate href=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/applications/flight-operations/pilot-acceptance-enhancements hreflang=en /><link data-rh=true rel=alternate href=https://ibm-maximo-dev.github.io/maximo-aviation-documentation/applications/flight-operations/pilot-acceptance-enhancements hreflang=x-default /><link rel=stylesheet href=/maximo-aviation-documentation/assets/css/styles.54285f35.css /><script src=/maximo-aviation-documentation/assets/js/runtime~main.1de7d9a6.js defer></script><script src=/maximo-aviation-documentation/assets/js/main.f2fec28a.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/maximo-aviation-documentation/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_oPtH href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/maximo-aviation-documentation/><div class=navbar__logo><img src=/maximo-aviation-documentation/img/logo.svg alt="IBM Maximo Aviation Logo" class="themedComponent_siVc themedComponent--light_hHel"/><img src=/maximo-aviation-documentation/img/logo.svg alt="IBM Maximo Aviation Logo" class="themedComponent_siVc themedComponent--dark_yETr"/></div><b class="navbar__title text--truncate">IBM Maximo Aviation</b></a><a class="navbar__item navbar__link" href=/maximo-aviation-documentation/overview/introduction>Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_bzqh><div class="navbar__search searchBarContainer_bpSG" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_T5pz" value="" /><div class="loadingRing_hScY searchBarLoadingRing_dMau"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_MB5r"><div class=docsWrapper__sE8><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_iEvu" type=button></button><div class=docRoot_DfVB><main class="docMainContainer_a9sJ docMainContainerEnhanced_grEJ"><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_Qr34"><div class=docItemContainer_tjFy><article><div class="tocCollapsible_wXna theme-doc-toc-mobile tocMobile_Ojys"><button type=button class="clean-btn tocCollapsibleButton_iI2p">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Pilot Acceptance Workflow Enhancement Analysis</h1></header>
+<p><strong>Document Version:</strong> 1.0<br/>
+<strong>Date:</strong> May 6, 2026<br/>
+<strong>Status:</strong> Proposal</p>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=executive-summary>Executive Summary<a href=#executive-summary class=hash-link aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary" translate=no>​</a></h2>
+<p>This document provides comprehensive enhancement recommendations for the Flight Log Book Setup and Flight Log Book applications to support an improved pilot acceptance workflow with configurable inspection requirements and validity periods. The enhancements enable aircraft type-specific configurations for pre-flight, post-flight, and turn-around inspections with automated validity tracking and pilot acceptance workflows.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=1-current-state-analysis>1. Current State Analysis<a href=#1-current-state-analysis class=hash-link aria-label="Direct link to 1. Current State Analysis" title="Direct link to 1. Current State Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=11-flight-log-book-setup>1.1 Flight Log Book Setup<a href=#11-flight-log-book-setup class=hash-link aria-label="Direct link to 1.1 Flight Log Book Setup" title="Direct link to 1.1 Flight Log Book Setup" translate=no>​</a></h3>
+<p><strong>Current Capabilities:</strong></p>
+<ul>
+<li class="">Basic "Post Flight Inspection" configuration</li>
+<li class="">Single job card assignment per setup</li>
+<li class="">Simple checkbox to enable/disable automatic work order creation</li>
+<li class="">Aircraft grounding upon post-flight inspection creation</li>
+<li class="">No validity period tracking</li>
+<li class="">No before-flight or turn-around inspection support</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li class="">Only supports post-flight inspections</li>
+<li class="">No configurable validity periods</li>
+<li class="">No aircraft type-specific variations</li>
+<li class="">No turn-around inspection logic</li>
+<li class="">Limited workflow automation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=12-flight-log-book>1.2 Flight Log Book<a href=#12-flight-log-book class=hash-link aria-label="Direct link to 1.2 Flight Log Book" title="Direct link to 1.2 Flight Log Book" translate=no>​</a></h3>
+<p><strong>Current Capabilities:</strong></p>
+<ul>
+<li class="">Flight data recording (crew, fuel, replenishments)</li>
+<li class="">Discrepancy tracking and management</li>
+<li class="">Deferral management (MEL/CDL)</li>
+<li class="">Aircraft status monitoring</li>
+<li class="">Inspection schedule visibility</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li class="">No explicit pilot acceptance workflow</li>
+<li class="">No inspection validity tracking</li>
+<li class="">No turn-around management</li>
+<li class="">No real-time inspection status dashboard</li>
+<li class="">Limited pilot decision support</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=2-enhancement-requirements>2. Enhancement Requirements<a href=#2-enhancement-requirements class=hash-link aria-label="Direct link to 2. Enhancement Requirements" title="Direct link to 2. Enhancement Requirements" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=21-core-requirements>2.1 Core Requirements<a href=#21-core-requirements class=hash-link aria-label="Direct link to 2.1 Core Requirements" title="Direct link to 2.1 Core Requirements" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Multiple Inspection Types</strong></p>
+<ul>
+<li class="">Pre-flight inspections</li>
+<li class="">Post-flight inspections</li>
+<li class="">Turn-around inspections</li>
+<li class="">Daily inspections</li>
+<li class="">Extended ground inspections</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Validity Period Management</strong></p>
+<ul>
+<li class="">Configurable validity periods per inspection type</li>
+<li class="">Multiple validity bases (calendar time, flight hours, cycles)</li>
+<li class="">Grace periods for operational flexibility</li>
+<li class="">Automatic expiry tracking</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Aircraft Type-Specific Configuration</strong></p>
+<ul>
+<li class="">Different requirements by aircraft model</li>
+<li class="">Operation type variations (commercial, cargo, military)</li>
+<li class="">Flight duration considerations (short/medium/long haul)</li>
+<li class="">Environmental condition factors</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Pilot Acceptance Workflow</strong></p>
+<ul>
+<li class="">Formal acceptance process</li>
+<li class="">Inspection status visibility</li>
+<li class="">Outstanding item review</li>
+<li class="">Digital signature capture</li>
+<li class="">Audit trail maintenance</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=3-flight-log-book-setup-enhancements>3. Flight Log Book Setup Enhancements<a href=#3-flight-log-book-setup-enhancements class=hash-link aria-label="Direct link to 3. Flight Log Book Setup Enhancements" title="Direct link to 3. Flight Log Book Setup Enhancements" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=31-new-inspection-requirements-section>3.1 New "Inspection Requirements" Section<a href=#31-new-inspection-requirements-section class=hash-link aria-label='Direct link to 3.1 New "Inspection Requirements" Section' title='Direct link to 3.1 New "Inspection Requirements" Section' translate=no>​</a></h3>
+<p>Replace the current simple "Post Flight Inspection" section with a comprehensive configuration table.</p>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=configuration-fields>Configuration Fields<a href=#configuration-fields class=hash-link aria-label="Direct link to Configuration Fields" title="Direct link to Configuration Fields" translate=no>​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field<th>Type<th>Description<th>Example Values<tbody><tr><td>Inspection Type<td>Dropdown<td>Type of inspection<td>Pre-Flight, Post-Flight, Turn-Around, Daily, Extended Ground<tr><td>Required?<td>Checkbox<td>Whether inspection is mandatory<td>Yes/No<tr><td>Job Card<td>Lookup<td>Job card to use for inspection<td>PREFLT-A320, POSTFLT-B737<tr><td>Validity Period<td>Numeric<td>Duration inspection remains valid<td>24, 48, 72<tr><td>Validity Period UOM<td>Dropdown<td>Unit of measure for validity<td>Hours, Days, Flight Hours, Cycles<tr><td>Validity Basis<td>Dropdown<td>What triggers validity countdown<td>Calendar Time, Flight Hours, Flight Cycles, Combination<tr><td>Grace Period<td>Numeric<td>Additional time allowed before expiry<td>2 hours, 1 day<tr><td>Grace Period UOM<td>Dropdown<td>Unit for grace period<td>Hours, Days<tr><td>Auto-Create Work Order?<td>Checkbox<td>Automatically generate WO<td>Yes/No<tr><td>Grounds Aircraft?<td>Checkbox<td>Whether inspection grounds aircraft<td>Yes/No<tr><td>Pilot Acceptance Required?<td>Checkbox<td>Requires pilot sign-off<td>Yes/No<tr><td>Applies To Flight Phase<td>Dropdown<td>When inspection is required<td>Before Departure, After Arrival, Between Flights, Daily, Extended Ground<tr><td>Trigger Condition<td>Dropdown<td>What triggers the inspection<td>Every Flight, Turn-Around &lt;X hours, Idle >X days</table>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=example-configurations>Example Configurations<a href=#example-configurations class=hash-link aria-label="Direct link to Example Configurations" title="Direct link to Example Configurations" translate=no>​</a></h4>
+<p><strong>Configuration 1: Short-Haul Commercial (A320)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds<th>Pilot Accept<th>Trigger<tbody><tr><td>Pre-Flight<td>Yes<td>24 hours<td>Calendar<td>PREFLT-A320<td>No<td>Yes<td>Every Flight<tr><td>Post-Flight<td>Yes<td>48 hours<td>Calendar<td>POSTFLT-A320<td>Yes<td>No<td>Every Flight<tr><td>Turn-Around<td>Yes<td>2 hours<td>Calendar<td>TURNAROUND-A320<td>No<td>No<td>Flights &lt;2h apart<tr><td>Daily<td>Yes<td>24 hours<td>Calendar<td>DAILY-A320<td>No<td>No<td>Once per day</table>
+<p><strong>Configuration 2: Long-Haul Commercial (B777)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds<th>Pilot Accept<th>Trigger<tbody><tr><td>Pre-Flight<td>Yes<td>48 hours<td>Calendar<td>PREFLT-B777<td>No<td>Yes<td>Every Flight<tr><td>Post-Flight<td>Yes<td>72 hours<td>Calendar<td>POSTFLT-B777<td>Yes<td>No<td>Every Flight<tr><td>Extended Ground<td>Yes<td>7 days<td>Calendar<td>EXTGND-B777<td>Yes<td>No<td>Idle >7 days<tr><td>ETOPS Pre-Flight<td>Yes<td>24 hours<td>Calendar<td>ETOPS-PREFLT-B777<td>No<td>Yes<td>ETOPS Flights</table>
+<p><strong>Configuration 3: Military Fighter (F-16)</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds<th>Pilot Accept<th>Trigger<tbody><tr><td>Pre-Flight<td>Yes<td>12 hours<td>Calendar<td>PREFLT-F16<td>No<td>Yes<td>Every Flight<tr><td>Post-Flight<td>Yes<td>24 hours<td>Calendar<td>POSTFLT-F16<td>Yes<td>No<td>Every Flight<tr><td>Phase<td>Yes<td>25 FH<td>Flight Hours<td>PHASE-F16<td>Yes<td>No<td>Every 25 FH<tr><td>Special<td>Conditional<td>Varies<td>Event<td>SPECIAL-F16<td>Yes<td>No<td>As Required</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=32-enhanced-applies-to-logic>3.2 Enhanced "Applies To" Logic<a href=#32-enhanced-applies-to-logic class=hash-link aria-label='Direct link to 3.2 Enhanced "Applies To" Logic' title='Direct link to 3.2 Enhanced "Applies To" Logic' translate=no>​</a></h3>
+<p>Extend the current model/configuration matching to include additional criteria:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field<th>Description<th>Purpose<th>Example Values<tbody><tr><td>Model<td>Aircraft model<td>Primary matching<td>A320, B737, F-16<tr><td>Configuration<td>Specific variant<td>Variant-specific rules<td>NEO, MAX, Block 50<tr><td>Operation Type<td>Type of operation<td>Operation-specific rules<td>Commercial, Cargo, Military, Training<tr><td>Flight Duration Category<td>Flight length<td>Duration-based rules<td>Short (&lt;3h), Medium (3-6h), Long (>6h)<tr><td>Base Location Type<td>Home vs. remote<td>Location-based rules<td>Home Base, Remote Station, Deployed<tr><td>Environmental Category<td>Operating environment<td>Environment-based rules<td>Standard, Hot/High, Cold, Corrosive</table>
+<p><strong>Matching Priority:</strong></p>
+<ol>
+<li class="">Model + Configuration + Operation Type (most specific)</li>
+<li class="">Model + Configuration</li>
+<li class="">Model + Operation Type</li>
+<li class="">Model only (least specific)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=33-new-inspection-validity-rules-section>3.3 New "Inspection Validity Rules" Section<a href=#33-new-inspection-validity-rules-section class=hash-link aria-label='Direct link to 3.3 New "Inspection Validity Rules" Section' title='Direct link to 3.3 New "Inspection Validity Rules" Section' translate=no>​</a></h3>
+<p>Define complex validity rules with multiple criteria:</p>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=rule-configuration-examples>Rule Configuration Examples<a href=#rule-configuration-examples class=hash-link aria-label="Direct link to Rule Configuration Examples" title="Direct link to Rule Configuration Examples" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_mQmQ theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_t_Hd><pre tabindex=0 class="prism-code language-text codeBlock_RMoD thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_AclH><div class=token-line style=color:#393A34><span class="token plain">Rule Example 1: Post-Flight Inspection</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Valid for: 48 hours OR 10 flight hours OR 5 flight cycles (whichever comes first)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Grace period: 2 hours for operational delays</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Warning threshold: Alert at 80% of validity period (38.4 hours)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Extension allowed: Yes, once, by Chief Inspector only, max 24 hours</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Extension requires: Written justification</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Rule Example 2: Pre-Flight Inspection</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Valid for: 24 hours AND must be within same calendar day as flight</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Grace period: None (strict compliance)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Warning threshold: Alert at 90% of validity period (21.6 hours)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Extension allowed: No</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Automatic invalidation: If aircraft configuration changes</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Rule Example 3: Turn-Around Inspection</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Valid for: 2 hours OR until next flight departure (whichever is shorter)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Grace period: 15 minutes</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Warning threshold: Alert at 75% of validity period (1.5 hours)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Extension allowed: No</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">- Required when: Time between flights &lt;3 hours</span><br/></div></code></pre></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=4-flight-log-book-application-enhancements>4. Flight Log Book Application Enhancements<a href=#4-flight-log-book-application-enhancements class=hash-link aria-label="Direct link to 4. Flight Log Book Application Enhancements" title="Direct link to 4. Flight Log Book Application Enhancements" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=41-new-pilot-acceptance-tab>4.1 New "Pilot Acceptance" Tab<a href=#41-new-pilot-acceptance-tab class=hash-link aria-label='Direct link to 4.1 New "Pilot Acceptance" Tab' title='Direct link to 4.1 New "Pilot Acceptance" Tab' translate=no>​</a></h3>
+<p>Add a dedicated section for pilot acceptance workflow with comprehensive status visibility.</p>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=acceptance-workflow-states>Acceptance Workflow States<a href=#acceptance-workflow-states class=hash-link aria-label="Direct link to Acceptance Workflow States" title="Direct link to Acceptance Workflow States" translate=no>​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>State<th>Description<th>Visual Indicator<th>Actions Available<tbody><tr><td>Pending Acceptance<td>Aircraft awaiting pilot review<td>🟡 Yellow<td>Review, Accept, Reject<tr><td>Inspection Required<td>One or more inspections expired/expiring<td>🔴 Red<td>View Inspections, Request Extension<tr><td>Accepted with Limitations<td>Accepted with MEL/CDL items<td>🟠 Orange<td>View Limitations, Revoke<tr><td>Accepted - Fully Serviceable<td>No limitations<td>🟢 Green<td>View Details, Revoke<tr><td>Rejected<td>Pilot refuses aircraft<td>🔴 Red<td>View Reason, Resolve Issues<tr><td>Not Available<td>Aircraft in maintenance/grounded<td>⚫ Gray<td>View Status</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=42-enhanced-aircraft-status-section>4.2 Enhanced "Aircraft Status" Section<a href=#42-enhanced-aircraft-status-section class=hash-link aria-label='Direct link to 4.2 Enhanced "Aircraft Status" Section' title='Direct link to 4.2 Enhanced "Aircraft Status" Section' translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=new-inspection-validity-status-sub-tab>New "Inspection Validity Status" Sub-Tab<a href=#new-inspection-validity-status-sub-tab class=hash-link aria-label='Direct link to New "Inspection Validity Status" Sub-Tab' title='Direct link to New "Inspection Validity Status" Sub-Tab' translate=no>​</a></h4>
+<p><strong>Visual Status Indicators:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Indicator<th>Status<th>Criteria<th>Action Required<tbody><tr><td>🟢 Green<td>Valid<td>>20% validity remaining<td>None - monitor<tr><td>🟡 Yellow<td>Warning<td>10-20% validity remaining<td>Plan renewal<tr><td>🟠 Orange<td>Urgent<td>&lt;10% validity remaining<td>Immediate action<tr><td>🔴 Red<td>Expired<td>Past validity period<td>Cannot fly - renew now<tr><td>🔵 Blue<td>Grace Period<td>In grace period<td>Urgent renewal required<tr><td>⚪ Gray<td>Not Required<td>Not applicable<td>None</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=43-new-inspection-history-tab>4.3 New "Inspection History" Tab<a href=#43-new-inspection-history-tab class=hash-link aria-label='Direct link to 4.3 New "Inspection History" Tab' title='Direct link to 4.3 New "Inspection History" Tab' translate=no>​</a></h3>
+<p>Comprehensive audit trail of all inspection completions and pilot acceptances.</p>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=44-enhanced-flight-data-section>4.4 Enhanced "Flight Data" Section<a href=#44-enhanced-flight-data-section class=hash-link aria-label='Direct link to 4.4 Enhanced "Flight Data" Section' title='Direct link to 4.4 Enhanced "Flight Data" Section' translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=new-fields-for-pilot-acceptance-tracking>New Fields for Pilot Acceptance Tracking<a href=#new-fields-for-pilot-acceptance-tracking class=hash-link aria-label="Direct link to New Fields for Pilot Acceptance Tracking" title="Direct link to New Fields for Pilot Acceptance Tracking" translate=no>​</a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Field<th>Type<th>Description<th>Purpose<tbody><tr><td>Pilot Acceptance Status<td>Dropdown<td>Status at flight start<td>Track acceptance compliance<tr><td>Acceptance Timestamp<td>DateTime<td>When pilot accepted aircraft<td>Audit trail<tr><td>Accepting Pilot<td>Person Lookup<td>Pilot who accepted aircraft<td>Accountability<tr><td>Acceptance Type<td>Dropdown<td>Type of acceptance<td>Fully Serviceable, With Limitations, With Conditions<tr><td>Acceptance Notes<td>Long Text<td>Any notes from pilot<td>Document concerns/conditions<tr><td>Inspection Validity Snapshot (Departure)<td>JSON<td>Snapshot of all inspection statuses at departure<td>Historical record<tr><td>Inspection Validity Snapshot (Arrival)<td>JSON<td>Snapshot of all inspection statuses at arrival<td>Determine next requirements</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=45-new-turn-around-management-section>4.5 New "Turn-Around Management" Section<a href=#45-new-turn-around-management-section class=hash-link aria-label='Direct link to 4.5 New "Turn-Around Management" Section' title='Direct link to 4.5 New "Turn-Around Management" Section' translate=no>​</a></h3>
+<p>Dedicated section for managing quick turn-around operations with timeline visualization and readiness tracking.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=5-workflow-integration>5. Workflow Integration<a href=#5-workflow-integration class=hash-link aria-label="Direct link to 5. Workflow Integration" title="Direct link to 5. Workflow Integration" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=51-automated-workflow-triggers>5.1 Automated Workflow Triggers<a href=#51-automated-workflow-triggers class=hash-link aria-label="Direct link to 5.1 Automated Workflow Triggers" title="Direct link to 5.1 Automated Workflow Triggers" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=scenario-1-normal-post-flight-to-pre-flight>Scenario 1: Normal Post-Flight to Pre-Flight<a href=#scenario-1-normal-post-flight-to-pre-flight class=hash-link aria-label="Direct link to Scenario 1: Normal Post-Flight to Pre-Flight" title="Direct link to Scenario 1: Normal Post-Flight to Pre-Flight" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_mQmQ theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_t_Hd><pre tabindex=0 class="prism-code language-text codeBlock_RMoD thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_AclH><div class=token-line style=color:#393A34><span class="token plain">Flight Lands (10:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Post-Flight Inspection Auto-Created (10:05)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Aircraft Status: GROUNDED</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Post-Flight Inspection Completed (11:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Post-Flight Inspection Valid Until: 11:00 + 48 hours = 2026-05-08 11:00</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Aircraft Status: AVAILABLE (but not accepted)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Next Flight Scheduled (2026-05-07 08:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pre-Flight Inspection Auto-Created (2026-05-07 06:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pre-Flight Inspection Completed (07:30)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pre-Flight Valid Until: 07:30 + 24 hours = 2026-05-08 07:30</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pilot Reviews Aircraft (07:45)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pilot Accepts Aircraft (07:50)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Aircraft Status: ACCEPTED - Ready for Flight</span><br/></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=scenario-2-quick-turn-around>Scenario 2: Quick Turn-Around<a href=#scenario-2-quick-turn-around class=hash-link aria-label="Direct link to Scenario 2: Quick Turn-Around" title="Direct link to Scenario 2: Quick Turn-Around" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_mQmQ theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_t_Hd><pre tabindex=0 class="prism-code language-text codeBlock_RMoD thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_AclH><div class=token-line style=color:#393A34><span class="token plain">Flight Lands (10:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Next Flight Scheduled (11:30) - Turn-around &lt; 2 hours</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">System Checks: Turn-Around Inspection Required</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Post-Flight Inspection Completed (10:15)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Turn-Around Inspection Auto-Created (10:20)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Turn-Around Inspection Completed (10:45)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Turn-Around Valid Until: 10:45 + 2 hours = 12:45</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pre-Flight Inspection Completed (11:00)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">All Inspections Valid</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pilot Accepts Aircraft (11:15)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Aircraft Ready for Departure (11:30)</span><br/></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_tleR" id=scenario-3-inspection-expiry-during-flight>Scenario 3: Inspection Expiry During Flight<a href=#scenario-3-inspection-expiry-during-flight class=hash-link aria-label="Direct link to Scenario 3: Inspection Expiry During Flight" title="Direct link to Scenario 3: Inspection Expiry During Flight" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_mQmQ theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_t_Hd><pre tabindex=0 class="prism-code language-text codeBlock_RMoD thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_AclH><div class=token-line style=color:#393A34><span class="token plain">Pre-Flight Inspection Valid Until: 14:00</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Flight Departure: 13:00</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Estimated Arrival: 15:30</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">System Warning: Pre-Flight will expire during flight</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Options:</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  1. Extend validity (if authorized)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  2. Perform new pre-flight</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  3. Accept with limitation (document reason)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ↓</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Pilot Decision Required</span><br/></div></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=52-notification-system>5.2 Notification System<a href=#52-notification-system class=hash-link aria-label="Direct link to 5.2 Notification System" title="Direct link to 5.2 Notification System" translate=no>​</a></h3>
+<p><strong>Alerts and Notifications:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Alert Type<th>Trigger<th>Recipients<th>Timing<tbody><tr><td>Inspection Expiring<td>80% of validity used<td>Maintenance Control, Pilot<td>Real-time<tr><td>Inspection Expired<td>Validity period ended<td>Maintenance Control, Operations<td>Immediate<tr><td>Pilot Acceptance Overdue<td>Flight scheduled, no acceptance<td>Operations, Chief Pilot<td>2 hours before departure<tr><td>Turn-Around Inspection Required<td>Quick turn-around detected<td>Maintenance, Ground Crew<td>At landing<tr><td>Grace Period Active<td>Inspection in grace period<td>Maintenance Control, Operations<td>Real-time<tr><td>Extension Requested<td>Pilot requests validity extension<td>Maintenance Control, Chief Inspector<td>Immediate</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=6-configuration-examples-by-aircraft-type>6. Configuration Examples by Aircraft Type<a href=#6-configuration-examples-by-aircraft-type class=hash-link aria-label="Direct link to 6. Configuration Examples by Aircraft Type" title="Direct link to 6. Configuration Examples by Aircraft Type" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=61-regional-turboprop-q400>6.1 Regional Turboprop (Q400)<a href=#61-regional-turboprop-q400 class=hash-link aria-label="Direct link to 6.1 Regional Turboprop (Q400)" title="Direct link to 6.1 Regional Turboprop (Q400)" translate=no>​</a></h3>
+<p><strong>FLB Setup Configuration:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds Aircraft<th>Pilot Acceptance<tbody><tr><td>Pre-Flight<td>Yes<td>24 hours<td>Calendar<td>PREFLT-Q400<td>No<td>Yes<tr><td>Post-Flight<td>Yes<td>48 hours<td>Calendar<td>POSTFLT-Q400<td>Yes<td>No<tr><td>Turn-Around<td>Yes (if &lt;3h)<td>3 hours<td>Calendar<td>TURNAROUND-Q400<td>No<td>No<tr><td>Daily<td>Yes<td>24 hours<td>Calendar<td>DAILY-Q400<td>No<td>No</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=62-wide-body-long-haul-a350>6.2 Wide-Body Long-Haul (A350)<a href=#62-wide-body-long-haul-a350 class=hash-link aria-label="Direct link to 6.2 Wide-Body Long-Haul (A350)" title="Direct link to 6.2 Wide-Body Long-Haul (A350)" translate=no>​</a></h3>
+<p><strong>FLB Setup Configuration:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds Aircraft<th>Pilot Acceptance<tbody><tr><td>Pre-Flight<td>Yes<td>48 hours<td>Calendar<td>PREFLT-A350<td>No<td>Yes<tr><td>Post-Flight<td>Yes<td>72 hours<td>Calendar<td>POSTFLT-A350<td>Yes<td>No<tr><td>Extended Ground<td>Yes (if >7 days idle)<td>7 days<td>Calendar<td>EXTGND-A350<td>Yes<td>No<tr><td>ETOPS Pre-Flight<td>Yes (ETOPS flights)<td>24 hours<td>Calendar<td>ETOPS-PREFLT-A350<td>No<td>Yes</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=63-military-helicopter-uh-60>6.3 Military Helicopter (UH-60)<a href=#63-military-helicopter-uh-60 class=hash-link aria-label="Direct link to 6.3 Military Helicopter (UH-60)" title="Direct link to 6.3 Military Helicopter (UH-60)" translate=no>​</a></h3>
+<p><strong>FLB Setup Configuration:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Inspection Type<th>Required<th>Validity<th>Basis<th>Job Card<th>Grounds Aircraft<th>Pilot Acceptance<tbody><tr><td>Pre-Flight<td>Yes<td>12 hours<td>Calendar<td>PREFLT-UH60<td>No<td>Yes<tr><td>Post-Flight<td>Yes<td>24 hours<td>Calendar<td>POSTFLT-UH60<td>Yes<td>No<tr><td>Phase<td>Yes<td>25 FH<td>Flight Hours<td>PHASE-UH60<td>Yes<td>No<tr><td>Special Inspection<td>Conditional<td>Varies<td>Event-driven<td>SPECIAL-UH60<td>Yes<td>No</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=7-database-schema-changes>7. Database Schema Changes<a href=#7-database-schema-changes class=hash-link aria-label="Direct link to 7. Database Schema Changes" title="Direct link to 7. Database Schema Changes" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=71-new-tables>7.1 New Tables<a href=#71-new-tables class=hash-link aria-label="Direct link to 7.1 New Tables" title="Direct link to 7.1 New Tables" translate=no>​</a></h3>
+<p><strong>1. PLUSAFLBINSPTYPE - Inspection Type Configuration</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Column<th>Type<th>Description<tbody><tr><td>INSPECTIONTYPE<td>VARCHAR(30)<td>Primary key - inspection type code<tr><td>DESCRIPTION<td>VARCHAR(100)<td>Description of inspection type<tr><td>DEFAULTVALIDITY<td>DECIMAL(10,2)<td>Default validity period<tr><td>DEFAULTVALIDITYUOM<td>VARCHAR(10)<td>Default UOM for validity<tr><td>DEFAULTBASIS<td>VARCHAR(20)<td>Default validity basis<tr><td>ISACTIVE<td>BOOLEAN<td>Whether type is active</table>
+<p><strong>2. PLUSAFLBINSPRULE - Inspection Rules per FLB Setup</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Column<th>Type<th>Description<tbody><tr><td>FLBSETUPID<td>VARCHAR(30)<td>Foreign key to FLB Setup<tr><td>INSPECTIONTYPE<td>VARCHAR(30)<td>Foreign key to inspection type<tr><td>REQUIRED<td>BOOLEAN<td>Whether inspection is required<tr><td>JOBCARD<td>VARCHAR(30)<td>Job card to use<tr><td>VALIDITYPERIOD<td>DECIMAL(10,2)<td>Validity period value<tr><td>VALIDITYUOM<td>VARCHAR(10)<td>Validity period UOM<tr><td>VALIDITYBASIS<td>VARCHAR(20)<td>Validity basis<tr><td>GRACEPERIOD<td>DECIMAL(10,2)<td>Grace period value<tr><td>GRACEPERIODUOM<td>VARCHAR(10)<td>Grace period UOM<tr><td>AUTOCREATEWO<td>BOOLEAN<td>Auto-create work order<tr><td>GROUNDSAIRCRAFT<td>BOOLEAN<td>Grounds aircraft<tr><td>PILOTACCEPTREQ<td>BOOLEAN<td>Pilot acceptance required<tr><td>FLIGHTPHASE<td>VARCHAR(30)<td>Flight phase applies to<tr><td>TRIGGERCONDITION<td>VARCHAR(50)<td>Trigger condition</table>
+<p><strong>3. PLUSAFLBINSPSTATUS - Current Inspection Status per Aircraft</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Column<th>Type<th>Description<tbody><tr><td>AIRCRAFT<td>VARCHAR(30)<td>Aircraft asset number<tr><td>INSPECTIONTYPE<td>VARCHAR(30)<td>Inspection type<tr><td>LASTCOMPLETED<td>DATETIME<td>Last completion timestamp<tr><td>COMPLETEDBY<td>VARCHAR(30)<td>Person who completed<tr><td>WORKORDER<td>VARCHAR(30)<td>Associated work order<tr><td>VALIDUNTIL<td>DATETIME<td>Validity expiration<tr><td>GRACEUNTIL<td>DATETIME<td>Grace period expiration<tr><td>STATUS<td>VARCHAR(20)<td>Current status<tr><td>PERCENTREMAINING<td>DECIMAL(5,2)<td>Percentage of validity remaining</table>
+<p><strong>4. PLUSAPILOTACCEPT - Pilot Acceptance Records</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Column<th>Type<th>Description<tbody><tr><td>ACCEPTANCEID<td>VARCHAR(30)<td>Primary key<tr><td>AIRCRAFT<td>VARCHAR(30)<td>Aircraft asset number<tr><td>FLIGHTLOGBOOK<td>VARCHAR(30)<td>Flight log book number<tr><td>FLIGHTDATA<td>VARCHAR(30)<td>Flight data record<tr><td>ACCEPTANCETS<td>DATETIME<td>Acceptance timestamp<tr><td>PILOT<td>VARCHAR(30)<td>Accepting pilot<tr><td>ACCEPTANCETYPE<td>VARCHAR(30)<td>Type of acceptance<tr><td>STATUS<td>VARCHAR(20)<td>Acceptance status<tr><td>NOTES<td>LONGTEXT<td>Acceptance notes<tr><td>INSPECTIONSNAPSHOT<td>LONGTEXT<td>JSON snapshot of inspections</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=72-modified-tables>7.2 Modified Tables<a href=#72-modified-tables class=hash-link aria-label="Direct link to 7.2 Modified Tables" title="Direct link to 7.2 Modified Tables" translate=no>​</a></h3>
+<p><strong>1. PLUSAFLBSETUP - Add fields:</strong></p>
+<ul>
+<li class="">TURNAROUNDTHRESHOLD (DECIMAL) - Hours threshold for turn-around</li>
+<li class="">EXTENDEDGROUNDTHRESHOLD (DECIMAL) - Days threshold for extended ground</li>
+<li class="">DEFAULTGRACEPERIOD (DECIMAL) - Default grace period</li>
+</ul>
+<p><strong>2. PLUSAFLIGHTDATA - Add fields:</strong></p>
+<ul>
+<li class="">PILOTACCEPTSTATUS (VARCHAR) - Pilot acceptance status</li>
+<li class="">ACCEPTANCETS (DATETIME) - Acceptance timestamp</li>
+<li class="">ACCEPTINGPILOT (VARCHAR) - Accepting pilot</li>
+<li class="">ACCEPTANCETYPE (VARCHAR) - Type of acceptance</li>
+<li class="">ACCEPTANCENOTES (LONGTEXT) - Acceptance notes</li>
+<li class="">INSPSNAPSHOTDEP (LONGTEXT) - Inspection snapshot at departure</li>
+<li class="">INSPSNAPSHOTARR (LONGTEXT) - Inspection snapshot at arrival</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=8-implementation-considerations>8. Implementation Considerations<a href=#8-implementation-considerations class=hash-link aria-label="Direct link to 8. Implementation Considerations" title="Direct link to 8. Implementation Considerations" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=81-phased-implementation-approach>8.1 Phased Implementation Approach<a href=#81-phased-implementation-approach class=hash-link aria-label="Direct link to 8.1 Phased Implementation Approach" title="Direct link to 8.1 Phased Implementation Approach" translate=no>​</a></h3>
+<p><strong>Phase 1: Core Functionality (Months 1-3)</strong></p>
+<ul>
+<li class="">Inspection type configuration in FLB Setup</li>
+<li class="">Validity period tracking engine</li>
+<li class="">Basic pilot acceptance workflow</li>
+<li class="">Database schema implementation</li>
+<li class="">Core UI components</li>
+</ul>
+<p><strong>Phase 2: Advanced Features (Months 4-6)</strong></p>
+<ul>
+<li class="">Turn-around inspection logic</li>
+<li class="">Complex validity rules (multiple criteria)</li>
+<li class="">Automated notifications and alerts</li>
+<li class="">Grace period management</li>
+<li class="">Extension request workflow</li>
+</ul>
+<p><strong>Phase 3: Integration & Enhancement (Months 7-9)</strong></p>
+<ul>
+<li class="">Mobile pilot acceptance app</li>
+<li class="">Integration with flight planning systems</li>
+<li class="">Advanced analytics and reporting</li>
+<li class="">Performance optimization</li>
+<li class="">User training and documentation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=82-migration-strategy>8.2 Migration Strategy<a href=#82-migration-strategy class=hash-link aria-label="Direct link to 8.2 Migration Strategy" title="Direct link to 8.2 Migration Strategy" translate=no>​</a></h3>
+<p><strong>Existing Data Migration:</strong></p>
+<ol>
+<li class="">Existing post-flight inspection configurations automatically migrated to new structure</li>
+<li class="">Default inspection rules created for all existing FLB Setups</li>
+<li class="">Historical inspection data preserved and linked to new system</li>
+<li class="">Gradual rollout by aircraft type to minimize disruption</li>
+</ol>
+<p><strong>Rollout Approach:</strong></p>
+<ol>
+<li class=""><strong>Pilot Program</strong> - Single aircraft type, single location (Month 1)</li>
+<li class=""><strong>Limited Rollout</strong> - Multiple aircraft types, single location (Month 2-3)</li>
+<li class=""><strong>Regional Rollout</strong> - All aircraft types, multiple locations (Month 4-6)</li>
+<li class=""><strong>Full Deployment</strong> - All aircraft, all locations (Month 7-9)</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=83-training-requirements>8.3 Training Requirements<a href=#83-training-requirements class=hash-link aria-label="Direct link to 8.3 Training Requirements" title="Direct link to 8.3 Training Requirements" translate=no>​</a></h3>
+<p><strong>User Groups:</strong></p>
+<ol>
+<li class=""><strong>Maintenance Planners</strong> - FLB Setup configuration, inspection rules</li>
+<li class=""><strong>Maintenance Technicians</strong> - Inspection completion, work order management</li>
+<li class=""><strong>Pilots</strong> - Acceptance workflow, inspection status review</li>
+<li class=""><strong>Operations Staff</strong> - Flight scheduling, turn-around management</li>
+<li class=""><strong>System Administrators</strong> - Configuration, troubleshooting, reporting</li>
+</ol>
+<p><strong>Training Materials:</strong></p>
+<ul>
+<li class="">User guides for each role</li>
+<li class="">Video tutorials for key workflows</li>
+<li class="">Quick reference cards</li>
+<li class="">Hands-on training sessions</li>
+<li class="">Online help system</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=84-testing-strategy>8.4 Testing Strategy<a href=#84-testing-strategy class=hash-link aria-label="Direct link to 8.4 Testing Strategy" title="Direct link to 8.4 Testing Strategy" translate=no>​</a></h3>
+<p><strong>Test Phases:</strong></p>
+<ol>
+<li class=""><strong>Unit Testing</strong> - Individual components and functions</li>
+<li class=""><strong>Integration Testing</strong> - Component interactions and data flow</li>
+<li class=""><strong>System Testing</strong> - End-to-end workflows</li>
+<li class=""><strong>User Acceptance Testing</strong> - Real-world scenarios with actual users</li>
+<li class=""><strong>Performance Testing</strong> - Load testing, stress testing</li>
+<li class=""><strong>Security Testing</strong> - Access controls, data protection</li>
+</ol>
+<p><strong>Test Scenarios:</strong></p>
+<ul>
+<li class="">Normal flight operations</li>
+<li class="">Quick turn-around operations</li>
+<li class="">Inspection expiry during flight</li>
+<li class="">Grace period management</li>
+<li class="">Extension requests</li>
+<li class="">Multiple aircraft types</li>
+<li class="">Concurrent operations</li>
+<li class="">System failures and recovery</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=9-benefits-of-proposed-enhancements>9. Benefits of Proposed Enhancements<a href=#9-benefits-of-proposed-enhancements class=hash-link aria-label="Direct link to 9. Benefits of Proposed Enhancements" title="Direct link to 9. Benefits of Proposed Enhancements" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=91-operational-benefits>9.1 Operational Benefits<a href=#91-operational-benefits class=hash-link aria-label="Direct link to 9.1 Operational Benefits" title="Direct link to 9.1 Operational Benefits" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Flexibility</strong></p>
+<ul>
+<li class="">Different inspection requirements for different aircraft types</li>
+<li class="">Configurable validity periods based on operational needs</li>
+<li class="">Support for various operation types (commercial, cargo, military)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Efficiency</strong></p>
+<ul>
+<li class="">Automated workflow reduces manual tracking</li>
+<li class="">Real-time status visibility eliminates information delays</li>
+<li class="">Turn-around management optimizes ground time</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Safety</strong></p>
+<ul>
+<li class="">Clear validity periods prevent operation with expired inspections</li>
+<li class="">Pilot acceptance ensures informed decision-making</li>
+<li class="">Grace periods provide operational flexibility without compromising safety</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=92-compliance-benefits>9.2 Compliance Benefits<a href=#92-compliance-benefits class=hash-link aria-label="Direct link to 9.2 Compliance Benefits" title="Direct link to 9.2 Compliance Benefits" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Regulatory Compliance</strong></p>
+<ul>
+<li class="">Documented pilot acceptance meets regulatory requirements</li>
+<li class="">Complete audit trail of all inspections and acceptances</li>
+<li class="">Automated tracking ensures no missed inspections</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Traceability</strong></p>
+<ul>
+<li class="">Historical snapshots of inspection status at flight time</li>
+<li class="">Complete record of who accepted aircraft and when</li>
+<li class="">Linkage between inspections, work orders, and flights</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=93-business-benefits>9.3 Business Benefits<a href=#93-business-benefits class=hash-link aria-label="Direct link to 9.3 Business Benefits" title="Direct link to 9.3 Business Benefits" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Visibility</strong></p>
+<ul>
+<li class="">Real-time status of all inspection requirements</li>
+<li class="">Dashboard views for operations and maintenance</li>
+<li class="">Predictive alerts for upcoming expirations</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Accountability</strong></p>
+<ul>
+<li class="">Clear audit trail of pilot acceptances</li>
+<li class="">Documented inspection completions</li>
+<li class="">Traceable decision-making process</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Scalability</strong></p>
+<ul>
+<li class="">Configuration-driven approach supports diverse fleet types</li>
+<li class="">Easy to add new aircraft types or inspection requirements</li>
+<li class="">Adaptable to changing regulatory requirements</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=94-cost-benefits>9.4 Cost Benefits<a href=#94-cost-benefits class=hash-link aria-label="Direct link to 9.4 Cost Benefits" title="Direct link to 9.4 Cost Benefits" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Reduced Downtime</strong></p>
+<ul>
+<li class="">Optimized turn-around management</li>
+<li class="">Proactive inspection scheduling</li>
+<li class="">Minimized delays due to expired inspections</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Improved Resource Utilization</strong></p>
+<ul>
+<li class="">Better planning of maintenance activities</li>
+<li class="">Coordinated inspection scheduling</li>
+<li class="">Reduced duplicate work</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Risk Mitigation</strong></p>
+<ul>
+<li class="">Reduced risk of regulatory violations</li>
+<li class="">Lower insurance premiums through demonstrated compliance</li>
+<li class="">Fewer operational disruptions</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=10-success-metrics>10. Success Metrics<a href=#10-success-metrics class=hash-link aria-label="Direct link to 10. Success Metrics" title="Direct link to 10. Success Metrics" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=101-key-performance-indicators-kpis>10.1 Key Performance Indicators (KPIs)<a href=#101-key-performance-indicators-kpis class=hash-link aria-label="Direct link to 10.1 Key Performance Indicators (KPIs)" title="Direct link to 10.1 Key Performance Indicators (KPIs)" translate=no>​</a></h3>
+<p><strong>Operational Metrics:</strong></p>
+<ul>
+<li class="">Average time from inspection completion to pilot acceptance</li>
+<li class="">Percentage of flights with valid inspections at departure</li>
+<li class="">Number of inspection expirations prevented by alerts</li>
+<li class="">Turn-around time improvement</li>
+<li class="">On-time departure rate improvement</li>
+</ul>
+<p><strong>Compliance Metrics:</strong></p>
+<ul>
+<li class="">Percentage of flights with documented pilot acceptance</li>
+<li class="">Number of expired inspection incidents</li>
+<li class="">Audit finding reduction</li>
+<li class="">Regulatory compliance score</li>
+</ul>
+<p><strong>Efficiency Metrics:</strong></p>
+<ul>
+<li class="">Reduction in manual tracking time</li>
+<li class="">Decrease in inspection-related delays</li>
+<li class="">Improvement in maintenance planning accuracy</li>
+<li class="">Reduction in duplicate inspections</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=102-success-criteria>10.2 Success Criteria<a href=#102-success-criteria class=hash-link aria-label="Direct link to 10.2 Success Criteria" title="Direct link to 10.2 Success Criteria" translate=no>​</a></h3>
+<p><strong>Phase 1 Success:</strong></p>
+<ul>
+<li class="">All aircraft types configured with inspection requirements</li>
+<li class="">Validity tracking operational for all inspections</li>
+<li class="">Pilot acceptance workflow in use</li>
+<li class="">Zero critical defects in production</li>
+</ul>
+<p><strong>Phase 2 Success:</strong></p>
+<ul>
+<li class="">Turn-around management operational</li>
+<li class="">Automated notifications functioning</li>
+<li class="">Grace period management working</li>
+<li class="">User satisfaction >80%</li>
+</ul>
+<p><strong>Phase 3 Success:</strong></p>
+<ul>
+<li class="">Mobile app deployed and in use</li>
+<li class="">Integration with flight planning complete</li>
+<li class="">Advanced reporting available</li>
+<li class="">Full regulatory compliance demonstrated</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=11-risk-assessment-and-mitigation>11. Risk Assessment and Mitigation<a href=#11-risk-assessment-and-mitigation class=hash-link aria-label="Direct link to 11. Risk Assessment and Mitigation" title="Direct link to 11. Risk Assessment and Mitigation" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=111-implementation-risks>11.1 Implementation Risks<a href=#111-implementation-risks class=hash-link aria-label="Direct link to 11.1 Implementation Risks" title="Direct link to 11.1 Implementation Risks" translate=no>​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Risk<th>Probability<th>Impact<th>Mitigation Strategy<tbody><tr><td>User resistance to change<td>Medium<td>High<td>Comprehensive training, phased rollout, user involvement<tr><td>Data migration issues<td>Medium<td>High<td>Thorough testing, backup procedures, rollback plan<tr><td>Integration complexity<td>High<td>Medium<td>Modular design, extensive testing, vendor support<tr><td>Performance degradation<td>Low<td>High<td>Performance testing, optimization, scalability design<tr><td>Regulatory non-compliance<td>Low<td>Critical<td>Legal review, regulatory consultation, compliance testing</table>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=112-operational-risks>11.2 Operational Risks<a href=#112-operational-risks class=hash-link aria-label="Direct link to 11.2 Operational Risks" title="Direct link to 11.2 Operational Risks" translate=no>​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Risk<th>Probability<th>Impact<th>Mitigation Strategy<tbody><tr><td>System downtime<td>Low<td>High<td>Redundancy, backup systems, manual procedures<tr><td>Incorrect validity calculations<td>Low<td>Critical<td>Extensive testing, validation rules, audit trails<tr><td>Missed inspections<td>Low<td>Critical<td>Multiple alerts, escalation procedures, manual checks<tr><td>Pilot acceptance delays<td>Medium<td>Medium<td>Mobile access, streamlined workflow, training</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=12-recommendations>12. Recommendations<a href=#12-recommendations class=hash-link aria-label="Direct link to 12. Recommendations" title="Direct link to 12. Recommendations" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=121-immediate-actions>12.1 Immediate Actions<a href=#121-immediate-actions class=hash-link aria-label="Direct link to 12.1 Immediate Actions" title="Direct link to 12.1 Immediate Actions" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Stakeholder Approval</strong></p>
+<ul>
+<li class="">Present proposal to management and operations</li>
+<li class="">Obtain regulatory approval for approach</li>
+<li class="">Secure budget and resources</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Detailed Design</strong></p>
+<ul>
+<li class="">Create detailed technical specifications</li>
+<li class="">Design database schema in detail</li>
+<li class="">Create UI/UX mockups and prototypes</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Pilot Selection</strong></p>
+<ul>
+<li class="">Select aircraft type for pilot program</li>
+<li class="">Identify pilot users and location</li>
+<li class="">Establish success criteria</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=122-short-term-actions-months-1-3>12.2 Short-Term Actions (Months 1-3)<a href=#122-short-term-actions-months-1-3 class=hash-link aria-label="Direct link to 12.2 Short-Term Actions (Months 1-3)" title="Direct link to 12.2 Short-Term Actions (Months 1-3)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Development</strong></p>
+<ul>
+<li class="">Implement Phase 1 functionality</li>
+<li class="">Create test environments</li>
+<li class="">Develop training materials</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Testing</strong></p>
+<ul>
+<li class="">Conduct unit and integration testing</li>
+<li class="">Perform user acceptance testing</li>
+<li class="">Execute performance testing</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Deployment</strong></p>
+<ul>
+<li class="">Deploy to pilot program</li>
+<li class="">Monitor and gather feedback</li>
+<li class="">Make adjustments as needed</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_tleR" id=123-long-term-actions-months-4-12>12.3 Long-Term Actions (Months 4-12)<a href=#123-long-term-actions-months-4-12 class=hash-link aria-label="Direct link to 12.3 Long-Term Actions (Months 4-12)" title="Direct link to 12.3 Long-Term Actions (Months 4-12)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Expansion</strong></p>
+<ul>
+<li class="">Roll out Phase 2 and 3 functionality</li>
+<li class="">Expand to additional aircraft types</li>
+<li class="">Deploy to all locations</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Optimization</strong></p>
+<ul>
+<li class="">Analyze usage patterns</li>
+<li class="">Optimize performance</li>
+<li class="">Enhance based on feedback</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Continuous Improvement</strong></p>
+<ul>
+<li class="">Regular review of effectiveness</li>
+<li class="">Incorporate new requirements</li>
+<li class="">Stay current with regulations</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=13-conclusion>13. Conclusion<a href=#13-conclusion class=hash-link aria-label="Direct link to 13. Conclusion" title="Direct link to 13. Conclusion" translate=no>​</a></h2>
+<p>The proposed enhancements to the Flight Log Book Setup and Flight Log Book applications provide a comprehensive solution for managing pilot acceptance workflows with configurable inspection requirements and validity periods. The design supports:</p>
+<ul>
+<li class=""><strong>Operational flexibility</strong> through aircraft type-specific configurations</li>
+<li class=""><strong>Safety improvement</strong> through clear validity tracking and pilot acceptance</li>
+<li class=""><strong>Regulatory compliance</strong> through documented processes and audit trails</li>
+<li class=""><strong>Efficiency gains</strong> through automated workflows and real-time visibility</li>
+<li class=""><strong>Scalability</strong> through configuration-driven design</li>
+</ul>
+<p>The phased implementation approach minimizes risk while delivering value incrementally. The solution is designed to adapt to changing operational needs and regulatory requirements while maintaining the highest standards of safety and compliance.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=appendix-a-glossary>Appendix A: Glossary<a href=#appendix-a-glossary class=hash-link aria-label="Direct link to Appendix A: Glossary" title="Direct link to Appendix A: Glossary" translate=no>​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Term<th>Definition<tbody><tr><td>FLB<td>Flight Log Book<tr><td>FLB Setup<td>Flight Log Book Setup - configuration template<tr><td>MEL<td>Minimum Equipment List<tr><td>CDL<td>Configuration Deviation List<tr><td>ETOPS<td>Extended-range Twin-engine Operational Performance Standards<tr><td>Turn-Around<td>Period between aircraft arrival and next departure<tr><td>Grace Period<td>Additional time allowed after validity expiration<tr><td>Validity Basis<td>Method for calculating inspection validity (calendar, hours, cycles)<tr><td>Pilot Acceptance<td>Formal process where pilot accepts aircraft for flight</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id=appendix-b-references>Appendix B: References<a href=#appendix-b-references class=hash-link aria-label="Direct link to Appendix B: References" title="Direct link to Appendix B: References" translate=no>​</a></h2>
+<ol>
+<li class="">Flight Log Book Setup Application Documentation</li>
+<li class="">Flight Log Book Application Documentation</li>
+<li class="">Maximo Aviation Core Concepts</li>
+<li class="">Regulatory Requirements for Flight Operations</li>
+<li class="">Industry Best Practices for Aircraft Inspection Management</li>
+</ol>
+<hr/>
+<p><strong>Document Control:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Version<th>Date<th>Author<th>Changes<tbody><tr><td>1.0<td>2026-05-06<td>Analysis Team<td>Initial proposal document</table>
+<hr/>
+<p><strong>Approval:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Role<th>Name<th>Signature<th>Date<tbody><tr><td>Product Manager<td><td><td><tr><td>Chief Pilot<td><td><td><tr><td>Maintenance Manager<td><td><td><tr><td>IT Manager<td><td><td><tr><td>Regulatory Compliance<td><td><td></table></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_XG6w thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#executive-summary class="table-of-contents__link toc-highlight">Executive Summary</a><li><a href=#1-current-state-analysis class="table-of-contents__link toc-highlight">1. Current State Analysis</a><ul><li><a href=#11-flight-log-book-setup class="table-of-contents__link toc-highlight">1.1 Flight Log Book Setup</a><li><a href=#12-flight-log-book class="table-of-contents__link toc-highlight">1.2 Flight Log Book</a></ul><li><a href=#2-enhancement-requirements class="table-of-contents__link toc-highlight">2. Enhancement Requirements</a><ul><li><a href=#21-core-requirements class="table-of-contents__link toc-highlight">2.1 Core Requirements</a></ul><li><a href=#3-flight-log-book-setup-enhancements class="table-of-contents__link toc-highlight">3. Flight Log Book Setup Enhancements</a><ul><li><a href=#31-new-inspection-requirements-section class="table-of-contents__link toc-highlight">3.1 New "Inspection Requirements" Section</a><ul><li><a href=#configuration-fields class="table-of-contents__link toc-highlight">Configuration Fields</a><li><a href=#example-configurations class="table-of-contents__link toc-highlight">Example Configurations</a></ul><li><a href=#32-enhanced-applies-to-logic class="table-of-contents__link toc-highlight">3.2 Enhanced "Applies To" Logic</a><li><a href=#33-new-inspection-validity-rules-section class="table-of-contents__link toc-highlight">3.3 New "Inspection Validity Rules" Section</a><ul><li><a href=#rule-configuration-examples class="table-of-contents__link toc-highlight">Rule Configuration Examples</a></ul></ul><li><a href=#4-flight-log-book-application-enhancements class="table-of-contents__link toc-highlight">4. Flight Log Book Application Enhancements</a><ul><li><a href=#41-new-pilot-acceptance-tab class="table-of-contents__link toc-highlight">4.1 New "Pilot Acceptance" Tab</a><ul><li><a href=#acceptance-workflow-states class="table-of-contents__link toc-highlight">Acceptance Workflow States</a></ul><li><a href=#42-enhanced-aircraft-status-section class="table-of-contents__link toc-highlight">4.2 Enhanced "Aircraft Status" Section</a><ul><li><a href=#new-inspection-validity-status-sub-tab class="table-of-contents__link toc-highlight">New "Inspection Validity Status" Sub-Tab</a></ul><li><a href=#43-new-inspection-history-tab class="table-of-contents__link toc-highlight">4.3 New "Inspection History" Tab</a><li><a href=#44-enhanced-flight-data-section class="table-of-contents__link toc-highlight">4.4 Enhanced "Flight Data" Section</a><ul><li><a href=#new-fields-for-pilot-acceptance-tracking class="table-of-contents__link toc-highlight">New Fields for Pilot Acceptance Tracking</a></ul><li><a href=#45-new-turn-around-management-section class="table-of-contents__link toc-highlight">4.5 New "Turn-Around Management" Section</a></ul><li><a href=#5-workflow-integration class="table-of-contents__link toc-highlight">5. Workflow Integration</a><ul><li><a href=#51-automated-workflow-triggers class="table-of-contents__link toc-highlight">5.1 Automated Workflow Triggers</a><ul><li><a href=#scenario-1-normal-post-flight-to-pre-flight class="table-of-contents__link toc-highlight">Scenario 1: Normal Post-Flight to Pre-Flight</a><li><a href=#scenario-2-quick-turn-around class="table-of-contents__link toc-highlight">Scenario 2: Quick Turn-Around</a><li><a href=#scenario-3-inspection-expiry-during-flight class="table-of-contents__link toc-highlight">Scenario 3: Inspection Expiry During Flight</a></ul><li><a href=#52-notification-system class="table-of-contents__link toc-highlight">5.2 Notification System</a></ul><li><a href=#6-configuration-examples-by-aircraft-type class="table-of-contents__link toc-highlight">6. Configuration Examples by Aircraft Type</a><ul><li><a href=#61-regional-turboprop-q400 class="table-of-contents__link toc-highlight">6.1 Regional Turboprop (Q400)</a><li><a href=#62-wide-body-long-haul-a350 class="table-of-contents__link toc-highlight">6.2 Wide-Body Long-Haul (A350)</a><li><a href=#63-military-helicopter-uh-60 class="table-of-contents__link toc-highlight">6.3 Military Helicopter (UH-60)</a></ul><li><a href=#7-database-schema-changes class="table-of-contents__link toc-highlight">7. Database Schema Changes</a><ul><li><a href=#71-new-tables class="table-of-contents__link toc-highlight">7.1 New Tables</a><li><a href=#72-modified-tables class="table-of-contents__link toc-highlight">7.2 Modified Tables</a></ul><li><a href=#8-implementation-considerations class="table-of-contents__link toc-highlight">8. Implementation Considerations</a><ul><li><a href=#81-phased-implementation-approach class="table-of-contents__link toc-highlight">8.1 Phased Implementation Approach</a><li><a href=#82-migration-strategy class="table-of-contents__link toc-highlight">8.2 Migration Strategy</a><li><a href=#83-training-requirements class="table-of-contents__link toc-highlight">8.3 Training Requirements</a><li><a href=#84-testing-strategy class="table-of-contents__link toc-highlight">8.4 Testing Strategy</a></ul><li><a href=#9-benefits-of-proposed-enhancements class="table-of-contents__link toc-highlight">9. Benefits of Proposed Enhancements</a><ul><li><a href=#91-operational-benefits class="table-of-contents__link toc-highlight">9.1 Operational Benefits</a><li><a href=#92-compliance-benefits class="table-of-contents__link toc-highlight">9.2 Compliance Benefits</a><li><a href=#93-business-benefits class="table-of-contents__link toc-highlight">9.3 Business Benefits</a><li><a href=#94-cost-benefits class="table-of-contents__link toc-highlight">9.4 Cost Benefits</a></ul><li><a href=#10-success-metrics class="table-of-contents__link toc-highlight">10. Success Metrics</a><ul><li><a href=#101-key-performance-indicators-kpis class="table-of-contents__link toc-highlight">10.1 Key Performance Indicators (KPIs)</a><li><a href=#102-success-criteria class="table-of-contents__link toc-highlight">10.2 Success Criteria</a></ul><li><a href=#11-risk-assessment-and-mitigation class="table-of-contents__link toc-highlight">11. Risk Assessment and Mitigation</a><ul><li><a href=#111-implementation-risks class="table-of-contents__link toc-highlight">11.1 Implementation Risks</a><li><a href=#112-operational-risks class="table-of-contents__link toc-highlight">11.2 Operational Risks</a></ul><li><a href=#12-recommendations class="table-of-contents__link toc-highlight">12. Recommendations</a><ul><li><a href=#121-immediate-actions class="table-of-contents__link toc-highlight">12.1 Immediate Actions</a><li><a href=#122-short-term-actions-months-1-3 class="table-of-contents__link toc-highlight">12.2 Short-Term Actions (Months 1-3)</a><li><a href=#123-long-term-actions-months-4-12 class="table-of-contents__link toc-highlight">12.3 Long-Term Actions (Months 4-12)</a></ul><li><a href=#13-conclusion class="table-of-contents__link toc-highlight">13. Conclusion</a><li><a href=#appendix-a-glossary class="table-of-contents__link toc-highlight">Appendix A: Glossary</a><li><a href=#appendix-b-references class="table-of-contents__link toc-highlight">Appendix B: References</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Documentation</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/maximo-aviation-documentation/overview/introduction>Getting Started</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Resources</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.ibm.com/docs/en/maximo-for-aviation/cd target=_blank rel="noopener noreferrer" class=footer__link-item>IBM Maximo Aviation documentation<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPrP><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 IBM Corporation.</div></div></div></footer></div></body>
